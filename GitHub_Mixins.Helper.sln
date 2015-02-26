@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7823631-4BB5-4EB0-BACB-31AEA69BFA73}"
+	ProjectSection(SolutionItems) = preProject
+		mixins.helper.less = mixins.helper.less
+		mixins.helper.nupkg = mixins.helper.nupkg
+		mixins.helper.png = mixins.helper.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
