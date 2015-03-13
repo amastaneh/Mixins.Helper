@@ -1,4 +1,4 @@
-# Mixins.Helper
+webdesigniran.com# Mixins.Helper
 
 Mixins.Helper is a basic and useful collection of **Less Mixins Functions** that are used to redeuce the work needed to apply styling to elements and cross-browser CSS compatibility. Mixins.Helper comes with a visual studio and microsoft friendly NuGet package.
 
@@ -50,3 +50,4 @@ Smaple of Mixins Helepr
 
 ## <a name="license"></a> License
 This project is dedicated to public and is free for all uses, commercial or otherwise.
+Supported by [Web Design Iran](http://webdesigniran.com)
