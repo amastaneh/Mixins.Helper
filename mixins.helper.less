@@ -13,7 +13,7 @@
 //  [-webkit-]  Safari (and other WebKit-based browsers)
 //  []          W3C
 //
-//  Version: 2.0
+//  Version: 2.x
 //  Developed by AmirMehdi KhademAstaneh
 //  Supported by Web Design Iran (webdesigniran.com)
 //
@@ -92,14 +92,17 @@
     -moz-border-radius-bottomright: @bottomright;
     -moz-border-radius-bottomleft: @bottomleft;
     -moz-border-radius-topleft: @topleft;
+
     -webkit-border-top-right-radius: @topright;
     -webkit-border-bottom-right-radius: @bottomright;
     -webkit-border-bottom-left-radius: @bottomleft;
     -webkit-border-top-left-radius: @topleft;
+
     border-top-right-radius: @topright;
     border-bottom-right-radius: @bottomright;
     border-bottom-left-radius: @bottomleft;
     border-top-left-radius: @topleft;
+
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -119,22 +122,36 @@
     .text-overflow(ellipsis);
 }
 
-.box-shadow(@inset, @offset-x, @offset-y, @blur-radius, @spread-radius, @color) {
+.box-shadow(@inset, @offset-x, @offset-y, @blur-radius, @spread-radius, @color) when (@inset=none) {
+    -moz-box-shadow: @offset-x @offset-y @blur-radius @spread-radius @color;
+    -webkit-box-shadow: @offset-x @offset-y @blur-radius @spread-radius @color;
+    box-shadow: @offset-x @offset-y @blur-radius @spread-radius @color;
+}
+
+.box-shadow(@inset, @offset-x, @offset-y, @blur-radius, @spread-radius, @color) when (@inset=inset) {
     -moz-box-shadow: @arguments;
     -webkit-box-shadow: @arguments;
     box-shadow: @arguments;
 }
 
-.box-shadow (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness-alpha: 0.25) {
-    .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness-alpha));
+.box-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
+    .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness));
 }
 
-.drop-shadow (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness-alpha: 0.25) {
-    .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness-alpha) );
+.drop-shadow (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
+    .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness) );
 }
 
-.inner-shadow (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness-alpha: 0.25) {
-    .box-shadow(inset, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness-alpha));
+.box-shadow-inner (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
+    .box-shadow(inset, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness));
+}
+
+.text-shadow(@value) {
+    text-shadow: @value;
+}
+
+.text-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @blackness: 0.25) {
+    text-shadow: @offset-x @offset-y @blur-radius rgba(0, 0, 0, @blackness);
 }
 
 .box-sizing (@type: border-box) {
@@ -247,12 +264,14 @@
     -moz-column-rule-color: @rule-color;
     -moz-column-rule-style: @rule-style;
     -moz-column-rule-width: @rule-width;
+
     -webkit-column-width: @column-width;
     -webkit-column-count: @column-count;
     -webkit-column-gap: @column-gap;
     -webkit-column-rule-color: @rule-color;
     -webkit-column-rule-style: @rule-style;
     -webkit-column-rule-width: @rule-width;
+
     column-width: @column-width;
     column-count: @column-count;
     column-gap: @column-gap;
