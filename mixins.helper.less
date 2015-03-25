@@ -27,16 +27,12 @@
     float: right;
 }
 
-.center {
-    text-align: center;
-}
-
 .fullscreen {
     width: 100%;
     height: 100%;
 }
 
-.hide() {
+.hide {
     display: none !important;
     visibility: hidden;
 }
@@ -45,6 +41,43 @@
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    .text-overflow(ellipsis);
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.center(@width) {
+    .center;
+    width: @width;
+}
+
+.center-and-justify(@width) {
+    .center(@width);
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.no-select {
+    .select(none);
+}
+
+.select(@type: none) {
+    -ms-touch-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .background-clip(@clip) {
@@ -61,19 +94,33 @@
 }
 
 .background-cover(@url) {
-    background: @url center center no-repeat transparent;
+    background: @url center center no-repeat fixed;
     .background-size(cover);
 }
 
-.no-select {
-    -ms-touch-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+.background-color(@color, @alpha-percentage) {
+    background-color: fade(@color, @alpha-percentage);
+}
+
+.box-sizing (@type: border-box) {
+    -ms-box-sizing: @type;
+    -moz-box-sizing: @type;
+    -webkit-box-sizing: @type;
+    box-sizing: @type;
+}
+
+.opacity (@opacity: 0.5) {
+    -khtml-opacity: @opacity;
+    -moz-opacity: @opacity;
+    -webkit-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.touch-action(@action: none) {
+    -ms-touch-action: @action;
+    -moz-touch-action: @action;
+    -webkit-touch-action: @action;
+    touch-action: @action;
 }
 
 .border-radius(@radius: 0) {
@@ -82,6 +129,10 @@
     -moz-border-radius: @radius;
     -webkit-border-radius: @radius;
     border-radius: @radius;
+}
+
+.border-radius-with_Pading(@radius: 0) {
+    .border-radius(@arguments);
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -92,17 +143,14 @@
     -moz-border-radius-bottomright: @bottomright;
     -moz-border-radius-bottomleft: @bottomleft;
     -moz-border-radius-topleft: @topleft;
-
     -webkit-border-top-right-radius: @topright;
     -webkit-border-bottom-right-radius: @bottomright;
     -webkit-border-bottom-left-radius: @bottomleft;
     -webkit-border-top-left-radius: @topleft;
-
     border-top-right-radius: @topright;
     border-bottom-right-radius: @bottomright;
     border-bottom-left-radius: @bottomleft;
     border-top-left-radius: @topleft;
-
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -114,12 +162,6 @@
     -moz-text-overflow: @type;
     -webkit-text-overflow: @type;
     text-overflow: @type;
-}
-
-.truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    .text-overflow(ellipsis);
 }
 
 .box-shadow(@inset, @offset-x, @offset-y, @blur-radius, @spread-radius, @color) when (@inset=none) {
@@ -150,22 +192,8 @@
     text-shadow: @value;
 }
 
-.text-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @blackness: 0.25) {
-    text-shadow: @offset-x @offset-y @blur-radius rgba(0, 0, 0, @blackness);
-}
-
-.box-sizing (@type: border-box) {
-    -ms-box-sizing: @type;
-    -moz-box-sizing: @type;
-    -webkit-box-sizing: @type;
-    box-sizing: @type;
-}
-
-.opacity (@opacity: 0.5) {
-    -khtml-opacity: @opacity;
-    -moz-opacity: @opacity;
-    -webkit-opacity: @opacity;
-    opacity: @opacity;
+.text-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @alpha: 0.25, @red: 0, @green: 0, @blue: 0) {
+    text-shadow: @offset-x @offset-y @blur-radius rgba(@red, @green, @blue, @alpha);
 }
 
 .gradient (@startColor: #eee, @endColor: white) {
@@ -264,14 +292,12 @@
     -moz-column-rule-color: @rule-color;
     -moz-column-rule-style: @rule-style;
     -moz-column-rule-width: @rule-width;
-
     -webkit-column-width: @column-width;
     -webkit-column-count: @column-count;
     -webkit-column-gap: @column-gap;
     -webkit-column-rule-color: @rule-color;
     -webkit-column-rule-style: @rule-style;
     -webkit-column-rule-width: @rule-width;
-
     column-width: @column-width;
     column-count: @column-count;
     column-gap: @column-gap;
@@ -279,3 +305,77 @@
     column-rule-style: @rule-style;
     column-rule-width: @rule-width;
 }
+
+.button-flat(@background-color: #000, @forecolor: #FFF, @border-radius: 2px, @border-width: 2px) {
+    border: @border-width solid transparent;
+    .border-radius(@border-radius);
+    color: @forecolor;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.65em 1.3em;
+    .center;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    .no-select;
+    .touch-action(manipulation);
+    background-image: none;
+    background-color: @background-color;
+    width: 100%;
+
+    &:hover {
+        background-color: transparent;
+        border-color: @background-color;
+        color: @background-color;
+    }
+}
+
+//  ===========================================================
+//  Image Filters
+//  ===========================================================
+.desaturate {
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+.image-color-BW {
+    .desaturate;
+}
+
+.image-color-normal {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+//  ===========================================================
+//  Draw Shapes
+//  ===========================================================
+.shape-rectangle(@width: 1rem; @height: 1rem; @color; black){
+    background: @color;
+    width: @width;
+    height: @height;
+}
+
+.shape-square(@width: 1rem; @color; black){
+    .shape-rectangle(@width, @width, @color);
+}
+
+.shape-ellipse(@width: 1rem; @height: 1rem; @color; black) {
+    .shape-rectangle(@width, @height, @color);
+    .border-radius(50%);
+}
+
+.shape-oval(@width: 1rem; @height: 1rem; @color; black) {
+    .shape-ellipse(@width, @height, @color);
+}
+
+
+.shape-circle(@radius: 1rem; @color; black) {
+    .shape-ellipse(@radius, @radius, @color);
+}
+
