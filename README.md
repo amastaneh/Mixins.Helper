@@ -17,7 +17,7 @@ Import Mixins.Helper with this line in top of your less
 After press `.` you can find out your Mixins from Visual Studio intelliSense box.
 
 ## <a name="documentation"></a> Documentation
-Smaple of Mixins Helepr
+Sample of Mixins Helper
 
 01. [.left](#)
 02. [.right](#)
@@ -47,6 +47,7 @@ Smaple of Mixins Helepr
 26. [.translate3d (x, y, z)](#)
 27. [.perspective (value)](#)
 28. [.transform-origin (x, y)](#)
+and more...
 
 ## <a name="license"></a> License
 This project is dedicated to public and is free for all uses, commercial or otherwise.
