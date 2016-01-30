@@ -13,12 +13,1056 @@
 //  [-webkit-]  Safari (and other WebKit-based browsers)
 //  []          W3C
 //
-//  Version: 3.1
+//  Version: 3.2
 //  Developed by AmirMehdi KhademAstaneh
 //  Supported by Web Design Iran (webdesigniran.com)
 //
 //  ===========================================================
 
+//  ===========================================================
+//  Social Media Colors
+//  Brands Colors
+//  Source: http://brandcolors.net/
+//  ===========================================================
+@color-4ormat: #fb0a2a;
+
+@color-500px: #0099e5;
+@color-500px-2: #ff4c4c;
+@color-500px-3: #34bf49;
+
+@color-about-me: #00405d;
+@color-about-me-2: #062f3c;
+@color-about-me-3: #2b82ad;
+@color-about-me-4: #cc7a00;
+@color-about-me-5: #ffcc33;
+
+@color-addvocate: #ff3322;
+
+@color-adobe: #ff0000;
+@color-adobe-2: #fbb034;
+@color-adobe-3: #ffdd00;
+@color-adobe-4: #c1d82f;
+@color-adobe-5: #00a4e4;
+@color-adobe-6: #8a7967;
+@color-adobe-7: #6a737b;
+
+@color-aim: #ffd900;
+
+@color-alienware: #020202;
+@color-alienware-2: #2ad2c9;
+@color-alienware-3: #d0e100;
+@color-alienware-4: #00f0f0;
+@color-alienware-5: #00f000;
+@color-alienware-6: #f0e000;
+@color-alienware-7: #00a0f0;
+@color-alienware-8: #9000f0;
+@color-alienware-9: #f00000;
+
+@color-amazon: #ff9900;
+@color-amazon-2: #146eb4;
+
+@color-american-red-cross: #ed1b2e;
+@color-american-red-cross-2: #6d6e70;
+@color-american-red-cross-3: #d7d7d8;
+@color-american-red-cross-4: #b4a996;
+@color-american-red-cross-5: #ecb731;
+@color-american-red-cross-6: #8ec06c;
+@color-american-red-cross-7: #537b35;
+@color-american-red-cross-8: #c4dff6;
+@color-american-red-cross-9: #56a0d3;
+@color-american-red-cross-10: #0091cd;
+@color-american-red-cross-11: #004b79;
+@color-american-red-cross-12: #7f181b;
+@color-american-red-cross-13: #d7d7d8;
+@color-american-red-cross-14: #9f9fa3;
+@color-american-red-cross-15: #000000;
+
+@color-android: #a4c639;
+
+@color-angies-list: #7fbb00;
+
+@color-answers: #136ad5;
+@color-answers-2: #fb8a2e;
+
+@color-aol: #ff0b00;
+@color-aol-2: #00c4ff;
+
+@color-arch-linux: #1793d1;
+@color-arch-linux-2: #333333;
+
+@color-asana: #1f8dd6;
+@color-asana-2: #34ad00;
+
+@color-associated-press: #ff322e;
+
+@color-att: #ff7200;
+@color-att-2: #fcb314;
+@color-att-3: #067ab4;
+@color-att-4: #3aa5dc;
+
+@color-atlanta-falcons: #000000;
+@color-atlanta-falcons-2: #a71930;
+@color-atlanta-falcons-3: #a5acaf;
+
+@color-atlassian: #003366;
+
+@color-auth0: #16214d;
+@color-auth0-2: #44c7f4;
+@color-auth0-3: #eb5424;
+@color-auth0-4: #d0d2d3;
+
+@color-baidu: #de0f17;
+@color-baidu-2: #2529d8;
+
+@color-bandcamp: #629aa9;
+
+@color-barnes-noble: #2a5934;
+
+@color-bebo: #e04646;
+
+@color-behance: #1769ff;
+
+@color-best-buy: #003b64;
+@color-best-buy-2: #fff200;
+
+@color-big-cartel: #a0ac48;
+@color-big-cartel-2: #70b29c;
+
+@color-bing-2: #ffb900;
+@color-bing-2-2: #505050;
+@color-bing-2-3: #a3a3a3;
+
+@color-bitbucket: #205081;
+
+@color-bitly: #ee6123;
+@color-bitly-2: #61b3de;
+
+@color-blackberry: #005387;
+@color-blackberry-2: #8cb811;
+@color-blackberry-3: #fdb813;
+@color-blackberry-4: #88aca1;
+@color-blackberry-5: #000000;
+@color-blackberry-6: #788cb6;
+@color-blackberry-7: #a1a1a4;
+@color-blackberry-8: #8f8f8c;
+
+@color-blogger: #f57d00;
+
+@color-boeing: #0039a6;
+
+@color-booking-com: #003580;
+
+@color-boy-scouts-of-america: #ce1126;
+@color-boy-scouts-of-america-2: #003f87;
+
+@color-british-airways: #075aaa;
+@color-british-airways-2: #eb2226;
+@color-british-airways-3: #01295c;
+@color-british-airways-4: #efe9e5;
+@color-british-airways-5: #aca095;
+@color-british-airways-6: #b9cfed;
+@color-british-airways-7: #a7a9ac;
+
+@color-bt: #d52685;
+@color-bt-2: #553a99;
+@color-bt-3: #6cbc35;
+@color-bt-4: #fd9f3e;
+@color-bt-5: #08538c;
+
+@color-buffer: #168eea;
+@color-buffer-2: #ee4f4f;
+@color-buffer-3: #fff9ea;
+@color-buffer-4: #76b852;
+@color-buffer-5: #323b43;
+@color-buffer-6: #59626a;
+@color-buffer-7: #ced7df;
+@color-buffer-8: #eff3f6;
+@color-buffer-9: #f4f7f9;
+
+@color-canon: #bc0024;
+@color-canon-2: #000000;
+
+@color-carbonmade: #613854;
+
+@color-carrefour: #00387b;
+@color-carrefour-2: #bb1e10;
+@color-carrefour-3: #f67828;
+@color-carrefour-4: #237f52;
+
+@color-case-mate: #84754e;
+@color-case-mate-2: #a6192e;
+@color-case-mate-3: #decba5;
+@color-case-mate-4: #000000;
+
+@color-charity-water: #ffc907;
+@color-charity-water-2: #2e9df7;
+@color-charity-water-3: #231f20;
+
+@color-cheddar: #ff7243;
+
+@color-coca-cola: #ed1c16;
+
+@color-code-school: #616f67;
+@color-code-school-2: #c68143;
+
+@color-codecademy: #f65a5b;
+@color-codecademy-2: #204056;
+
+@color-creative-market: #8ba753;
+
+@color-crunchbase: #2292a7;
+
+@color-cunard: #1d1d1b;
+@color-cunard-2: #ae9a64;
+@color-cunard-3: #e42313;
+@color-cunard-4: #8b8c8d;
+
+@color-daimler: #263f6a;
+@color-daimler-2: #182b45;
+@color-daimler-3: #6b0f24;
+@color-daimler-4: #193725;
+@color-daimler-5: #606061;
+
+@color-delectable: #334858;
+@color-delectable-2: #cd595a;
+@color-delectable-3: #94938f;
+@color-delectable-4: #a3a7a6;
+@color-delectable-5: #dbc5b0;
+@color-delectable-6: #f8dfc2;
+@color-delectable-7: #f9ebdf;
+
+@color-delicious: #3399ff;
+@color-delicious-2: #222222;
+@color-delicious-3: #eeeeee;
+
+@color-dell: #0085c3;
+@color-dell-2: #7ab800;
+@color-dell-3: #f2af00;
+@color-dell-4: #dc5034;
+@color-dell-5: #ce1126;
+@color-dell-6: #b7295a;
+@color-dell-7: #6e2585;
+@color-dell-8: #71c6c1;
+@color-dell-9: #5482ab;
+@color-dell-10: #009bbb;
+@color-dell-11: #444444;
+@color-dell-12: #eeeeee;
+
+@color-designer-news: #2d72d9;
+
+@color-designmoo: #e64b50;
+@color-designmoo-2: #dbc65d;
+
+@color-deviantart: #05cc47;
+@color-deviantart-2: #4dc47d;
+@color-deviantart-3: #181a1b;
+
+@color-devour: #ff0000;
+
+@color-dewalt: #febd17;
+
+@color-dhl: #ba0c2f;
+@color-dhl-2: #ffcd00;
+@color-dhl-3: #c9c9c9;
+
+@color-digg: #000000;
+
+@color-directv: #00a6d6;
+@color-directv-2: #00629b;
+@color-directv-3: #003865;
+
+@color-disqus: #2e9fff;
+
+@color-django: #092e20;
+
+@color-dominos: #0b648f;
+@color-dominos-2: #e21737;
+
+@color-dow: #e80033;
+@color-dow-2: #fdbb30;
+@color-dow-3: #ed8b00;
+@color-dow-4: #f15d22;
+@color-dow-5: #bf0d3e;
+@color-dow-6: #910048;
+@color-dow-7: #d0006f;
+
+@color-dribbble: #444444;
+@color-dribbble-2: #ea4c89;
+@color-dribbble-3: #8aba56;
+@color-dribbble-4: #ff8833;
+@color-dribbble-5: #00b6e3;
+@color-dribbble-6: #9ba5a8;
+
+@color-dropbox: #007ee5;
+@color-dropbox-2: #7b8994;
+@color-dropbox-3: #47525d;
+@color-dropbox-4: #3d464d;
+
+@color-drupal: #0077c0;
+@color-drupal-2: #81ceff;
+@color-drupal-3: #00598e;
+
+@color-dunked: #2f3238;
+@color-dunked-2: #3fc380;
+
+@color-etrade: #6633cc;
+@color-etrade-2: #99cc00;
+
+@color-easy-jet: #ff6600;
+@color-easy-jet-2: #000000;
+@color-easy-jet-3: #58595b;
+
+@color-ebay: #e53238;
+@color-ebay-2: #0064d2;
+@color-ebay-3: #f5af02;
+@color-ebay-4: #86b817;
+
+@color-elance: #0d69af;
+
+@color-ello: #000000;
+
+@color-ember: #f23819;
+
+@color-engadget: #40b3ff;
+
+@color-envato: #82b541;
+
+@color-ericsson: #002561;
+
+@color-esl: #0d9ddb;
+@color-esl-2: #48b8e7;
+@color-esl-3: #efecea;
+@color-esl-4: #2c2b2b;
+
+@color-espn: #ff0033;
+
+@color-etsy: #d5641c;
+
+@color-evernote: #7ac142;
+@color-evernote-2: #808084;
+
+@color-fab-com: #dd0017;
+@color-fab-com-2: #000000;
+
+@color-facebook: #3b5998;
+
+@color-famo-us: #fa5c4f;
+@color-famo-us-2: #333333;
+
+@color-fedex: #660099;
+@color-fedex-2: #ff6600;
+@color-fedex-3: #00cc00;
+@color-fedex-4: #0099cc;
+@color-fedex-5: #ff0033;
+@color-fedex-6: #ffcc00;
+@color-fedex-7: #999999;
+
+@color-fiat: #96172e;
+@color-fiat-2: #6d2d41;
+
+@color-firefox: #e66000;
+@color-firefox-2: #ff9500;
+@color-firefox-3: #ffcb00;
+@color-firefox-4: #00539f;
+@color-firefox-5: #0095dd;
+@color-firefox-6: #331e54;
+@color-firefox-7: #002147;
+
+@color-fitbit: #4cc2c4;
+@color-fitbit-2: #f54785;
+@color-fitbit-3: #343434;
+
+@color-five-guys: #ed174f;
+@color-five-guys-2: #fbb040;
+@color-five-guys-3: #efc402;
+@color-five-guys-4: #d4891c;
+
+@color-flattr: #f67c1a;
+@color-flattr-2: #338d11;
+
+@color-flickr: #0063dc;
+@color-flickr-2: #ff0084;
+
+@color-flipboard: #cc0000;
+
+@color-flixster: #2971b2;
+
+@color-follr: #4dc9f6;
+@color-follr-2: #f67019;
+@color-follr-3: #f53794;
+@color-follr-4: #537bc4;
+@color-follr-5: #acc236;
+
+@color-forrst: #5b9a68;
+
+@color-foursquare: #0072b1;
+@color-foursquare-2: #eeebac;
+@color-foursquare-3: #0cbadf;
+@color-foursquare-4: #8fd400;
+@color-foursquare-5: #ff7900;
+@color-foursquare-6: #ffcb00;
+@color-foursquare-7: #d1d4d3;
+
+@color-garmin: #007cc3;
+
+@color-geocaching: #4a742c;
+
+@color-ghost: #212425;
+@color-ghost-2: #718087;
+@color-ghost-3: #5ba4e5;
+@color-ghost-4: #9fbb58;
+@color-ghost-5: #e9e8dd;
+
+@color-gibson: #000000;
+@color-gibson-2: #436f8e;
+@color-gibson-3: #887d59;
+@color-gibson-4: #8f9696;
+
+@color-gimmebar: #d6156c;
+
+@color-github: #4183c4;
+@color-github-2: #999999;
+@color-github-3: #666666;
+@color-github-4: #333333;
+@color-github-5: #6cc644;
+@color-github-6: #bd2c00;
+@color-github-7: #ff9933;
+
+@color-gittip: #663300;
+@color-gittip-2: #339966;
+
+@color-godaddy: #7db701;
+@color-godaddy-2: #ff8a00;
+
+@color-goodreads: #553b08;
+
+@color-google: #4285f4;
+@color-google-2: #db4437;
+@color-google-3: #f4b400;
+@color-google-4: #0f9d58;
+@color-google-5: #e7e6dd;
+
+@color-google-plus: #dd4b39;
+
+@color-gravatar: #1e8cbe;
+
+@color-grooveshark: #f77f00;
+@color-grooveshark-2: #333333;
+@color-grooveshark-3: #666666;
+@color-grooveshark-4: #888888;
+
+@color-groupon: #82b548;
+
+@color-hacker-news: #ff6600;
+
+@color-heineken: #00a100;
+@color-heineken-2: #ff2b00;
+@color-heineken-3: #999999;
+
+@color-hellowallet: #0093d0;
+
+@color-heroku: #c9c3e6;
+@color-heroku-2: #6762a6;
+
+@color-hi5: #fd9827;
+
+@color-home-depot: #f96305;
+
+@color-hootsuite: #003265;
+@color-hootsuite-2: #f7e8d5;
+@color-hootsuite-3: #ffbd0a;
+@color-hootsuite-4: #c6af92;
+@color-hootsuite-5: #71685f;
+@color-hootsuite-6: #54493f;
+@color-hootsuite-7: #38322d;
+
+@color-houzz: #7ac142;
+@color-houzz-2: #000000;
+
+@color-hp: #0096d6;
+@color-hp-2: #d7410b;
+
+@color-hsbc: #db0011;
+
+@color-html5: #e34f26;
+
+@color-hulu: #a5cd39;
+@color-hulu-2: #6bb03e;
+
+@color-ibm: #006699;
+
+@color-ifttt: #33ccff;
+@color-ifttt-2: #ff4400;
+@color-ifttt-3: #000000;
+
+@color-iheartradio: #c6002b;
+
+@color-ikea: #ffcc00;
+@color-ikea-2: #003399;
+
+@color-imdb: #f5de50;
+
+@color-indiegogo: #eb1478;
+
+@color-instagram: #3f729b;
+
+@color-instapaper: #000000;
+@color-instapaper-2: #428bca;
+
+@color-intel: #0f7dc2;
+
+@color-intuit: #365ebf;
+
+@color-ios: #5fc9f8;
+@color-ios-2: #fecb2e;
+@color-ios-3: #fd9426;
+@color-ios-4: #fc3158;
+@color-ios-5: #147efb;
+@color-ios-6: #53d769;
+@color-ios-7: #fc3d39;
+@color-ios-8: #8e8e93;
+
+@color-jawbone: #000000;
+
+@color-keeeb: #00a9c0;
+
+@color-khan-academy: #9cb443;
+@color-khan-academy-2: #242f3a;
+
+@color-kia: #c21a30;
+
+@color-kickstarter: #2bde73;
+@color-kickstarter-2: #0f2105;
+
+@color-kippt: #d51007;
+
+@color-kiwipay: #00b0df;
+
+@color-laravel: #f55247;
+
+@color-lastfm: #c3000d;
+
+@color-linkedin: #0976b4;
+@color-linkedin-2: #000000;
+
+@color-livestream: #cf202e;
+@color-livestream-2: #232121;
+@color-livestream-3: #f78822;
+@color-livestream-4: #f6db35;
+@color-livestream-5: #6dc067;
+@color-livestream-6: #4185be;
+@color-livestream-7: #8f499c;
+
+@color-lloyds: #d81f2a;
+@color-lloyds-2: #ff9900;
+@color-lloyds-3: #e0d86e;
+@color-lloyds-4: #9ea900;
+@color-lloyds-5: #6ec9e0;
+@color-lloyds-6: #007ea3;
+@color-lloyds-7: #9e4770;
+@color-lloyds-8: #631d76;
+@color-lloyds-9: #1e1e1e;
+
+@color-lomo: #eb0028;
+@color-lomo-2: #00a0df;
+
+@color-lumo: #576396;
+
+@color-lyft: #d71472;
+@color-lyft-2: #333e48;
+@color-lyft-3: #c2bcb5;
+@color-lyft-4: #fcdcf0;
+@color-lyft-5: #85a6c7;
+@color-lyft-6: #00b2a9;
+@color-lyft-7: #9bd9d9;
+
+@color-mailchimp: #2c9ab7;
+@color-mailchimp-2: #449a88;
+@color-mailchimp-3: #febe12;
+@color-mailchimp-4: #db3a1b;
+@color-mailchimp-5: #373737;
+
+@color-mastercard: #cc0000;
+@color-mastercard-2: #ff9900;
+@color-mastercard-3: #000066;
+
+@color-meetup: #e0393e;
+
+@color-microsoft: #f65314;
+@color-microsoft-2: #7cbb00;
+@color-microsoft-3: #00a1f1;
+@color-microsoft-4: #ffbb00;
+
+@color-microsoft-office: #ea3e23;
+
+@color-mixpanel: #a086d3;
+
+@color-motorola: #5c92fa;
+
+@color-muut: #1fadc5;
+@color-muut-2: #ff8000;
+
+@color-myspace: #000000;
+
+@color-nbc: #e1ac26;
+@color-nbc-2: #dc380f;
+@color-nbc-3: #9f0812;
+@color-nbc-4: #6347b2;
+@color-nbc-5: #368dd5;
+@color-nbc-6: #70af1e;
+@color-nbc-7: #7e887a;
+
+@color-nest: #00afd8;
+@color-nest-2: #7b858e;
+
+@color-netflix: #b9090b;
+
+@color-netvibes: #39bd00;
+
+@color-new-balance: #ce2724;
+@color-new-balance-2: #f3ec19;
+@color-new-balance-3: #207c88;
+@color-new-balance-4: #aac1bf;
+@color-new-balance-5: #e8e9d7;
+@color-new-balance-6: #4c4d4f;
+@color-new-balance-7: #231f20;
+
+@color-nextdoor: #19975d;
+
+@color-nike-football: #504847;
+@color-nike-football-2: #27a770;
+
+@color-nikefuel: #4bad31;
+@color-nikefuel-2: #f5dc00;
+@color-nikefuel-3: #e95814;
+@color-nikefuel-4: #e2142d;
+
+@color-nokia: #124191;
+
+@color-novartis: #765438;
+@color-novartis-2: #a13323;
+@color-novartis-3: #e65124;
+@color-novartis-4: #ec7f22;
+@color-novartis-5: #f8b22a;
+@color-novartis-6: #ffd430;
+
+@color-nvidia: #76b900;
+
+@color-odnoklassniki: #ed812b;
+
+@color-opera: #cc0f16;
+@color-opera-2: #9c9e9f;
+
+@color-oracle: #ff0000;
+@color-oracle-2: #000000;
+@color-oracle-3: #7f7f7f;
+
+@color-oxford-university-press: #002147;
+@color-oxford-university-press-2: #000000;
+@color-oxford-university-press-3: #666666;
+
+@color-panasonic: #0f58a8;
+@color-panasonic-2: #000000;
+
+@color-pandora: #005483;
+
+@color-path: #ee3423;
+
+@color-paymill: #f05000;
+
+@color-paypal: #003087;
+@color-paypal-2: #009cde;
+@color-paypal-3: #012169;
+
+@color-pearson: #ed6b06;
+@color-pearson-2: #9d1348;
+@color-pearson-3: #008b5d;
+@color-pearson-4: #364395;
+
+@color-penguin-books: #ff6900;
+
+@color-pepsi: #e32934;
+@color-pepsi-2: #004883;
+
+@color-pfizer: #0093d0;
+@color-pfizer-2: #000000;
+@color-pfizer-3: #616365;
+@color-pfizer-4: #00aeef;
+@color-pfizer-5: #d6006e;
+@color-pfizer-6: #75d1e0;
+@color-pfizer-7: #7dba00;
+@color-pfizer-8: #cc292b;
+@color-pfizer-9: #00a950;
+@color-pfizer-10: #f8971d;
+@color-pfizer-11: #f7d417;
+@color-pfizer-12: #4a245e;
+@color-pfizer-13: #f26649;
+
+@color-philips: #0e5fd8;
+
+@color-photobucket: #0ea0db;
+@color-photobucket-2: #000000;
+
+@color-pinboard: #0000e6;
+
+@color-pinterest: #cc2127;
+
+@color-pizza-hut: #ee3124;
+@color-pizza-hut-2: #00a160;
+@color-pizza-hut-3: #ffc425;
+
+@color-plasso: #6585ed;
+@color-plasso-2: #f5756c;
+@color-plasso-3: #98afc0;
+@color-plasso-4: #2f3148;
+
+@color-plaxo: #414f5a;
+
+@color-playstation: #003087;
+
+@color-pocket: #d3505a;
+@color-pocket-2: #478f8f;
+
+@color-portfolium: #0099ff;
+@color-portfolium-2: #fb0a2a;
+@color-portfolium-3: #17ad49;
+@color-portfolium-4: #333333;
+
+@color-postmates: #000000;
+@color-postmates-2: #36454f;
+
+@color-prezi: #318bff;
+
+@color-priceline: #1885bf;
+
+@color-product-hunt: #d85536;
+
+@color-quora: #a82400;
+
+@color-quote-fm: #66ceff;
+
+@color-razer: #00ff00;
+
+@color-rdio: #007dc3;
+
+@color-readability: #990000;
+
+@color-red-hat: #cc0000;
+
+@color-reddit: #ff4500;
+@color-reddit-2: #5f99cf;
+@color-reddit-3: #cee3f8;
+
+@color-redfin: #a02021;
+
+@color-reverbnation: #e43526;
+
+@color-rockpack: #0ba6ab;
+
+@color-roku: #6f1ab1;
+
+@color-rolls-royce: #680021;
+@color-rolls-royce-2: #fffaec;
+@color-rolls-royce-3: #939598;
+@color-rolls-royce-4: #000000;
+
+@color-roo-kids: #e22027;
+@color-roo-kids-2: #a1cd3d;
+@color-roo-kids-3: #003e70;
+
+@color-roon: #62b0d9;
+
+@color-rounds: #fdd800;
+
+@color-rss-2: #f26522;
+
+@color-sainsburys: #ec8a00;
+
+@color-salesforce: #1798c1;
+@color-salesforce-2: #ff1100;
+
+@color-samsung: #1428a0;
+@color-samsung-2: #75787b;
+@color-samsung-3: #0689d8;
+@color-samsung-4: #ffc600;
+@color-samsung-5: #ff6900;
+@color-samsung-6: #e4002b;
+@color-samsung-7: #c800a1;
+@color-samsung-8: #685bc7;
+@color-samsung-9: #0057b8;
+@color-samsung-10: #00a9e0;
+@color-samsung-11: #009ca6;
+@color-samsung-12: #00b140;
+
+@color-sap: #003366;
+@color-sap-2: #999999;
+
+@color-scribd: #1a7bba;
+
+@color-sherwin-williams: #0168b3;
+@color-sherwin-williams-2: #ee3e34;
+
+@color-shopify: #96bf48;
+@color-shopify-2: #479ccf;
+@color-shopify-3: #2d3538;
+@color-shopify-4: #f5f5f5;
+@color-shopify-5: #f2f7fa;
+@color-shopify-6: #666666;
+
+@color-skype: #00aff0;
+
+@color-smashing-magazine: #e53b2c;
+@color-smashing-magazine-2: #41b7d8;
+
+@color-snagajob: #f47a20;
+
+@color-socialbro: #29c4d0;
+@color-socialbro-2: #f29556;
+@color-socialbro-3: #84afa2;
+@color-socialbro-4: #72c427;
+@color-socialbro-5: #f24c7c;
+@color-socialbro-6: #00aaf2;
+
+@color-softonic: #008ace;
+
+@color-songkick: #f80046;
+
+@color-sonicbids: #ff6600;
+@color-sonicbids-2: #0c88b1;
+
+@color-soundcloud: #ff8800;
+@color-soundcloud-2: #ff3300;
+
+@color-spotify: #2ebd59;
+
+@color-sprint: #ffe100;
+
+@color-square-cash: #28c101;
+
+@color-squarespace: #222222;
+
+@color-stackoverflow: #fe7a15;
+
+@color-staples: #cc0000;
+@color-staples-2: #2c8aec;
+@color-staples-3: #ffcc00;
+
+@color-starbucks: #00704a;
+@color-starbucks-2: #000000;
+
+@color-status-chart: #d7584f;
+
+@color-sterling-hotels: #3b5a6f;
+@color-sterling-hotels-2: #828a87;
+@color-sterling-hotels-3: #000000;
+@color-sterling-hotels-4: #9db7c4;
+@color-sterling-hotels-5: #ccd7dd;
+@color-sterling-hotels-6: #838f97;
+@color-sterling-hotels-7: #002054;
+
+@color-storyful: #f97200;
+@color-storyful-2: #010101;
+@color-storyful-3: #8b8b64;
+@color-storyful-4: #bbbdc0;
+
+@color-strava: #fc4c02;
+
+@color-stripe: #00afe1;
+
+@color-studyblue: #00afe1;
+
+@color-stumbleupon: #eb4924;
+
+@color-subway: #489e3b;
+@color-subway-2: #fabd42;
+@color-subway-3: #cd0a20;
+
+@color-sugarcrm: #e61718;
+@color-sugarcrm-2: #e8e9ea;
+@color-sugarcrm-3: #595a5c;
+@color-sugarcrm-4: #282828;
+
+@color-t-mobile: #e20074;
+
+@color-technorati: #339900;
+
+@color-tesla: #cc0000;
+
+@color-the-audience-awards: #ee8421;
+@color-the-audience-awards-2: #8c8a8a;
+@color-the-audience-awards-3: #222222;
+
+@color-the-next-web: #ff3c1f;
+@color-the-next-web-2: #26313b;
+@color-the-next-web-3: #4e5860;
+@color-the-next-web-4: #a6abaf;
+@color-the-next-web-5: #d9e0e2;
+@color-the-next-web-6: #fafbfc;
+
+@color-tivo: #da3d34;
+@color-tivo-2: #00a480;
+@color-tivo-3: #ed9f40;
+@color-tivo-4: #6a76ac;
+@color-tivo-5: #17170e;
+@color-tivo-6: #534b38;
+@color-tivo-7: #a6a480;
+
+@color-treehouse: #6fbc6d;
+@color-treehouse-2: #47535b;
+
+@color-trello: #0079bf;
+@color-trello-2: #70b500;
+@color-trello-3: #ff9f1a;
+@color-trello-4: #eb5a46;
+@color-trello-5: #f2d600;
+@color-trello-6: #c377e0;
+@color-trello-7: #ff78cb;
+@color-trello-8: #00c2e0;
+@color-trello-9: #51e898;
+@color-trello-10: #c4c9cc;
+
+@color-trulia: #5eab1f;
+
+@color-tumblr: #35465c;
+
+@color-tvtag: #f24e4e;
+
+@color-twitch-tv: #6441a5;
+
+@color-twitter: #55acee;
+
+@color-typekit: #98ce1e;
+
+@color-typepad: #d2de61;
+
+@color-typo3: #ff8600;
+
+@color-ubuntu: #dd4814;
+@color-ubuntu-2: #77216f;
+@color-ubuntu-3: #5e2750;
+@color-ubuntu-4: #2c001e;
+@color-ubuntu-5: #aea79f;
+@color-ubuntu-6: #333333;
+
+@color-united-way: #10167f;
+@color-united-way-2: #fe230a;
+@color-united-way-3: #ff9600;
+@color-united-way-4: #000064;
+@color-united-way-5: #b41428;
+@color-united-way-6: #f57814;
+@color-united-way-7: #e6d7aa;
+@color-united-way-8: #505050;
+@color-united-way-9: #f0e6c8;
+@color-united-way-10: #969696;
+@color-united-way-11: #7c81b8;
+@color-united-way-12: #ff967d;
+@color-united-way-13: #ffc87d;
+
+@color-university-of-oregon: #fce122;
+@color-university-of-oregon-2: #18453b;
+
+@color-univision: #c822b0;
+
+@color-ustream: #3388ff;
+
+@color-verizon: #ff0000;
+@color-verizon-2: #f2f2f2;
+@color-verizon-3: #3285dc;
+
+@color-vimeo: #162221;
+@color-vimeo-2: #1ab7ea;
+
+@color-vine: #00b488;
+
+@color-virb: #1e91d0;
+
+@color-virgin-media: #c3092d;
+@color-virgin-media-2: #222221;
+
+@color-vkontakte: #45668e;
+
+@color-volvo: #003057;
+@color-volvo-2: #115740;
+@color-volvo-3: #65665c;
+@color-volvo-4: #425563;
+@color-volvo-5: #517891;
+@color-volvo-6: #212721;
+
+@color-walgreens: #e31837;
+@color-walgreens-2: #f37520;
+@color-walgreens-3: #489cd4;
+@color-walgreens-4: #2774a6;
+@color-walgreens-5: #35393d;
+
+@color-walmart: #0e7bc3;
+@color-walmart-2: #05509b;
+@color-walmart-3: #6eaddf;
+@color-walmart-4: #f27922;
+@color-walmart-5: #fcbc32;
+@color-walmart-6: #3b7f2c;
+@color-walmart-7: #7ec544;
+
+@color-wechat: #7bb32e;
+
+@color-western-digital: #005195;
+@color-western-digital-2: #028948;
+@color-western-digital-3: #ffd400;
+@color-western-digital-4: #0067b3;
+@color-western-digital-5: #9d0a0e;
+@color-western-digital-6: #003369;
+
+@color-windows: #00bcf2;
+
+@color-windows-phone: #68217a;
+
+@color-wooga: #5b009c;
+
+@color-wordpress: #21759b;
+@color-wordpress-2: #d54e21;
+@color-wordpress-3: #464646;
+
+@color-wordpress-com: #1e8cbe;
+
+@color-worldline: #0066a1;
+
+@color-wunderlist: #2b96f1;
+
+@color-xbox: #52b043;
+
+@color-xing: #026466;
+@color-xing-2: #cfdc00;
+
+@color-yahoo: #400191;
+
+@color-yandex: #ffcc00;
+
+@color-yelp: #af0606;
+
+@color-yo: #9b59b6;
+
+@color-youtube: #e52d27;
+@color-youtube-2: #b31217;
+@color-youtube-3: #000000;
+
+@color-zendesk: #78a300;
+@color-zendesk-2: #f1f1f1;
+@color-zendesk-3: #444444;
+
+@color-zerply: #9dbc7a;
+
+@color-zillow: #1277e1;
+
+@color-zopim: #ff9d3b;
+
+@color-snapchat: #fffc00;
+@color-viber: #6a468a;
+@color-line: #00c300;
+@color-webdesigniran: #58c3bb;
+
+
+//  ===========================================================
+//  Mixins
+//  ===========================================================
 .left {
     float: left;
 }
@@ -27,24 +1071,32 @@
     float: right;
 }
 
-.center {
-    text-align: center;
-}
-
 .fullscreen {
     width: 100%;
     height: 100%;
 }
 
 .hide {
-	display: none !important;
-	visibility: hidden;
+    display: none !important;
+    visibility: hidden;
 }
 
 .edge-less {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+/*For very long words*/
+.multilines {
+    white-space: pre-line;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .truncate {
@@ -67,6 +1119,39 @@
     .center(@width);
     text-align: justify;
     margin: 0 auto;
+}
+
+.center-absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-outer {
+    position: relative;
+}
+
+.middle-inner {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .translate(-50%, -50%);
+}
+
+.vertical-align(@position: relative) {
+    position: @position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.outline-remove() {
+    outline: 0 none;
+    outline-style: none;
 }
 
 .no-select {
@@ -106,6 +1191,12 @@
     background-color: fade(@color, @alpha-percentage);
 }
 
+.appearance(@value) {
+    -moz-appearance: @value;
+    -webkit-appearance: @value;
+    appearance: @value;
+}
+
 .box-sizing (@type: border-box) {
     -ms-box-sizing: @type;
     -moz-box-sizing: @type;
@@ -134,7 +1225,7 @@
     -webkit-border-radius: @radius;
     border-radius: @radius;
 }
-    
+
 .border-radius-with_Pading(@radius: 0) {
     .border-radius(@arguments);
     -moz-background-clip: padding;
@@ -160,12 +1251,23 @@
     background-clip: padding-box;
 }
 
+.text-word-wrap {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
 .text-overflow(@type: ellipsis) {
     -o-text-overflow: @type;
     -ms-text-overflow: @type;
     -moz-text-overflow: @type;
     -webkit-text-overflow: @type;
     text-overflow: @type;
+}
+
+.box-shadow-remove() {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .box-shadow(@inset, @offset-x, @offset-y, @blur-radius, @spread-radius, @color) when (@inset=none) {
@@ -184,12 +1286,20 @@
     .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness));
 }
 
-.drop-shadow (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
+.box-shadow-color(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @color: #000, @opacity: 0.25) {
+    .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, fade(@color, @opacity*100));
+}
+
+.drop-shadow(@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
     .box-shadow(none, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness) );
 }
 
 .box-shadow-inner (@offset-x: 0, @offset-y: 1px, @blur-radius: 2px, @spread-radius: 0, @blackness: 0.25) {
     .box-shadow(inset, @offset-x, @offset-y, @blur-radius, @spread-radius, rgba(0, 0, 0, @blackness));
+}
+
+.text-shadow-remove() {
+    text-shadow: none;
 }
 
 .text-shadow(@value) {
@@ -310,7 +1420,7 @@
     column-rule-width: @rule-width;
 }
 
-.button-flat(@background-color: #000, @forecolor: #FFF, @border-radius: 2px, @border-width: 2px) {
+.button-flat(@background-color: #000, @forecolor: #FFF, @border-radius: 2px, @border-width: 2px, @font-size: 1rem) {
     border: @border-width solid transparent;
     .border-radius(@border-radius);
     color: @forecolor;
@@ -319,7 +1429,7 @@
     padding: 0.65em 1.3em;
     .center;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: @font-size;
     text-transform: none;
     text-align: center;
     vertical-align: middle;
@@ -328,12 +1438,23 @@
     .touch-action(manipulation);
     background-image: none;
     background-color: @background-color;
-    width: 100%;
+
+    &:hover,
+    &:focus {
+        background-color: transparent !important;
+        color: @background-color !important;
+        .border-radius(@border-radius);
+        .outline-remove() !important;
+    }
 
     &:hover {
-        background-color: transparent;
-        border-color: @background-color;
-        color: @background-color;
+        border: @border-width solid @background-color !important;
+        .box-shadow-remove;
+    }
+
+    &:focus {
+        border: @border-width solid transparent !important;
+        .box-shadow-color(0, 0, 6px, 0, @background-color, 1);
     }
 }
 
@@ -359,13 +1480,13 @@
 //  ===========================================================
 //  Draw Shapes
 //  ===========================================================
-.shape-rectangle(@width: 1rem; @height: 1rem; @color; black){
+.shape-rectangle(@width: 1rem; @height: 1rem; @color; black) {
     background: @color;
     width: @width;
     height: @height;
 }
 
-.shape-square(@width: 1rem; @color; black){
+.shape-square(@width: 1rem; @color; black) {
     .shape-rectangle(@width, @width, @color);
 }
 
@@ -378,9 +1499,49 @@
     .shape-ellipse(@width, @height, @color);
 }
 
-
 .shape-circle(@radius: 1rem; @color; black) {
     .shape-ellipse(@radius, @radius, @color);
+}
+
+.tag(@color-back, @color-text, @point-size: 6px ) {
+    border: 0;
+    .border-radius();
+    color: @color-text;
+    background-color: @color-back;
+    display: inline;
+    position: relative;
+    margin: 0 0 0 @point-size*2;
+    height: @point-size*4;
+
+    &:before {
+        background-color: @color-text;
+        width: @point-size;
+        height: @point-size;
+        content: "";
+        display: inline-block;
+        .shape-circle(@point-size, @color-text);
+        margin-left: @point-size/2;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -1*@point-size*4;
+        border-color: transparent transparent transparent @color-back;
+        border-style: solid;
+        border-width: @point-size*2;
+    }
+
+    &:focus,
+    &:hover {
+        color: @color-text;
+        background-color: @color-back;
+
+        &:before {
+            background-color: @color-text;
+        }
+    }
 }
 
 
@@ -615,99 +1776,34 @@
 
 .font-size-70 {
     font-size: 70% !important;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .font-size-80 {
     font-size: 80% !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .font-size-90 {
     font-size: 90% !important;
-
-
-
-
-
 }
 
 .font-size-100 {
     font-size: 100% !important;
-
-
-
-
-
-
-
-
 }
 
 .font-size-150 {
     font-size: 150% !important;
-
-
 }
 
 .font-size-200 {
     font-size: 200% !important;
-
-
-
 }
 
 .ltr {
     direction: ltr;
-
-
-
-
-
-
-
 }
 
 .rtl {
     direction: rtl;
-
-
 }
 
 .overlay {
@@ -716,9 +1812,6 @@
     left: 0;
     width: 100%;
     z-index: 1;
-
-
-
 }
 
 
@@ -736,8 +1829,6 @@
 .divider30 {
     display: block;
     height: 30px;
-
-
 }
 
 .divider40 {
@@ -749,6 +1840,5 @@
     display: block;
     height: 40px;
 }
-
 
 
