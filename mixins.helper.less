@@ -13,7 +13,7 @@
 //  [-webkit-]  Safari (and other WebKit-based browsers)
 //  []          W3C
 //
-//  Version: 3.2
+//  Version: 3.3
 //  Developed by AmirMehdi KhademAstaneh
 //  Supported by Web Design Iran (webdesigniran.com)
 //
@@ -1508,7 +1508,8 @@
     .border-radius();
     color: @color-text;
     background-color: @color-back;
-    display: inline;
+    display: inline-block;
+    line-height: 1rem;
     position: relative;
     margin: 0 0 0 @point-size*2;
     height: @point-size*4;
@@ -1520,7 +1521,7 @@
         content: "";
         display: inline-block;
         .shape-circle(@point-size, @color-text);
-        margin-left: @point-size/2;
+        margin: 0 @point-size/-2 0 @point-size/2;
     }
 
     &:after {
@@ -1818,7 +1819,6 @@
 .divider10 {
     display: block;
     height: 10px;
-
 }
 
 .divider20 {
@@ -1840,5 +1840,3 @@
     display: block;
     height: 40px;
 }
-
-
