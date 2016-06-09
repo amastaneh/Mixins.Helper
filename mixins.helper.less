@@ -13,11 +13,25 @@
 //  [-webkit-]  Safari (and other WebKit-based browsers)
 //  []          W3C
 //
-//  Version: 3.5
-//  Developed by AmirMehdi KhademAstaneh
+//  Version: 3.9
 //  Supported by Web Design Iran (webdesigniran.com)
 //
 //  ===========================================================
+
+
+//  ===========================================================
+//  Media Queries
+//  ===========================================================
+@screen-lg-ex-min: 75em;
+@screen-lg-max: 74.9em;
+@screen-lg-min: 62em;
+@screen-md-max: 61.9em;
+@screen-md-min: 48em;
+@screen-sm-max: 47.9em;
+@screen-sm-min: 34em;
+@screen-xs-max: 33.9em;
+@screen-xs-min: 0;
+
 
 //  ===========================================================
 //  Social Media Colors
@@ -886,6 +900,8 @@
 
 @color-technorati: #339900;
 
+@color-telegram: #0088cc;
+
 @color-tesla: #cc0000;
 
 @color-the-audience-awards: #ee8421;
@@ -1568,6 +1584,7 @@
 @color-gray-80: hsl(0, 0%, 80%);
 @color-gray-90: hsl(0, 0%, 90%);
 @color-gray-95: hsl(0, 0%, 95%);
+@color-gray-99: hsl(0, 0%, 99%);
 
 .color-black {
     color: black;
@@ -1575,6 +1592,14 @@
 
 .color-white {
     color: white;
+}
+
+.background-color-black {
+    background-color: black;
+}
+
+.background-color-white {
+    background-color: white;
 }
 
 
@@ -1619,6 +1644,10 @@
     color: @color-gray-95;
 }
 
+.color-gray-99 {
+    color: @color-gray-99;
+}
+
 .background-color-gray-10 {
     background-color: @color-gray-10;
 }
@@ -1659,6 +1688,53 @@
     background-color: @color-gray-95;
 }
 
+.background-color-gray-99 {
+    background-color: @color-gray-99;
+}
+
+.border-color-gray-10 {
+    border-color: @color-gray-10;
+}
+
+.border-color-gray-20 {
+    border-color: @color-gray-20;
+}
+
+.border-color-gray-30 {
+    border-color: @color-gray-30;
+}
+
+.border-color-gray-40 {
+    border-color: @color-gray-40;
+}
+
+.border-color-gray-50 {
+    border-color: @color-gray-50;
+}
+
+.border-color-gray-60 {
+    border-color: @color-gray-60;
+}
+
+.border-color-gray-70 {
+    border-color: @color-gray-70;
+}
+
+.border-color-gray-80 {
+    border-color: @color-gray-80;
+}
+
+.border-color-gray-90 {
+    border-color: @color-gray-90;
+}
+
+.border-color-gray-95 {
+    border-color: @color-gray-95;
+}
+
+.border-color-gray-99 {
+    border-color: @color-gray-99;
+}
 
 .color-1, .color-1-bluenavy {
     color: @color-1-bluenavy;
@@ -1814,6 +1890,10 @@
 
 .font-size-200 {
     font-size: 200% !important;
+}
+
+.font-size-300 {
+    font-size: 300% !important;
 }
 
 .ltr {
