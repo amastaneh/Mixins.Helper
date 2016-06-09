@@ -1,4 +1,6 @@
-webdesigniran.com# Mixins.Helper
+# Mixins.Helper
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6426dc49a74c4bedaa90fcb09d7a7575)](https://www.codacy.com/app/amastaneh/Mixins-Helper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=webdesigniran/Mixins.Helper&amp;utm_campaign=Badge_Grade)
 
 Mixins.Helper is a basic and useful collection of **Less Mixins Functions** that are used to redeuce the work needed to apply styling to elements and cross-browser CSS compatibility. Mixins.Helper comes with a visual studio and microsoft friendly NuGet package.
 
